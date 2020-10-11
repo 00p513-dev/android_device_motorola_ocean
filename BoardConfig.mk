@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/ocean
+DEVICE_PATH := device/motorola/channel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -56,7 +56,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 ifeq ($(strip $(TARGET_PREBUILT_KERNEL)),)
-TARGET_KERNEL_CONFIG := ocean_defconfig
+TARGET_KERNEL_CONFIG := channel_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sdm632
 endif
 
@@ -99,4 +99,4 @@ TARGET_USES_LOGD := true
 # Installer
 AB_OTA_UPDATER := true
 USE_RECOVERY_INSTALLER := true
-RECOVERY_INSTALLER_PATH := device/motorola/ocean/installer
+RECOVERY_INSTALLER_PATH := device/motorola/channel/installer
