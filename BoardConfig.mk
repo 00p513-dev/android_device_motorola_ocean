@@ -39,9 +39,9 @@ TARGET_BOARD_PLATFORM := msm8953
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci androidboot.usbconfigfs=true
-BOARD_KERNEL_CMDLINE += androidboot.hab.csv=1 androidboot.hab.product=ocean androidboot.hab.cid=50 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.hab.csv=1 androidboot.hab.product=channel androidboot.hab.cid=50 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.fastboot=1
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
