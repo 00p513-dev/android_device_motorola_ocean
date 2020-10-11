@@ -14,7 +14,7 @@ $BOOTMODE || ps -A 2>/dev/null | grep zygote | grep -v grep >/dev/null && BOOTMO
 
 ui_print "########################################";
 ui_print "#     Unofficial TWRP installer for    #";
-ui_print "#        Moto g(7) power (ocean)       #";
+ui_print "#       Moto g(7) play (channel)       #";
 ui_print "########################################";
 ui_print " ";
 
